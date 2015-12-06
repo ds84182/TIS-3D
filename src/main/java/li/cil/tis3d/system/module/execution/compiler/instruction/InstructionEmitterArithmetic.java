@@ -16,7 +16,7 @@ public class InstructionEmitterArithmetic extends AbstractInstructionEmitter {
 	private final Function<Target, Instruction> targetedInstruction;
 	private final Function<Integer, Instruction> immediateInstruction;
 	
-	public InstructionEmitterArithmetic(String name, Function<Target, Instruction> target, Function<Integer, Instruction> immedate) {
+	public InstructionEmitterArithmetic(final String name, final Function<Target, Instruction> target, final Function<Integer, Instruction> immedate) {
 		this.name = name;
 		this.targetedInstruction = target;
 		this.immediateInstruction = immedate;
